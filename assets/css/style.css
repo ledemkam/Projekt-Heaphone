@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
-html {
-    box-sizing: border-box;
-  }
+
+
   
-  *, *::before, *::after {
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -140,12 +138,14 @@ ul.nav-vertikal{
   animation: grow 1s  infinite;
   animation-timing-function: linear;
 
+  @keyframes grow {
+    from {top: 0px;}
+    to {bottom: 10px;}
+  }
+
 }
 
-@keyframes grow {
-  from {top: 0px;}
-  to {bottom: 10px;}
-}
+
 
 /*------ende navi-vertikal---*/
 

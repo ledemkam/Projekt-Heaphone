@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/lounger.css">
     <link rel="stylesheet" href="assets/css/shop.css">
     <title>Document</title>
 </head>
 
 <body>
 
-<!------navigation vertikal-->
+<!--navigation vertikal-->
 
     <nav class="navbar2">
         <ul class="nav-vertikal">
@@ -24,7 +26,7 @@
 
     </nav>
 
-    <!---footerbereich   nach oben-->
+    <!--footerbereich   nach oben-->
 
     <footer class="navbar">
         <a href="#" class="ilogo">
@@ -42,7 +44,7 @@
         </ul>
     </footer>
 
-   <!---section -->
+   <!--section -->
 
     <section class="sectionbox">
         <p><img src="assets/img/headphone-159569_1280.png" alt="headphone"> </p><br>
@@ -50,29 +52,41 @@
         <strong>Beoplay H9</strong><br>
         <P>Argile Bright</P><br>
         <p>500$</p><br>
-        <button>Buy</button>
+        <button class="butt">Buy</button><br>
+
+        <p>Erstmal sich bitte hier anmelden,um zu kaufen</p><br>
+
+        <div class="menber">
+            <button onclick="openLoginForm()">Anmeldung</button>
+          </div>
+          <div class="popup-overlay"></div>
+          <div class="popup">
+            <div class="popup-close" onclick="closeLoginForm()">×</div>
+            <div class="form">
+              <div class="avatar">
+                <img src="assets/img/avatar.png" alt="avatar">
+              </div>
+              <div class="header">
+                Login für Mitglieder
+              </div>
+              <div class="element">
+                <label for="username">Benutzername</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+              </div>
+              <div class="element">
+                <button>Anmeldung</button>
+              </div>
+            </div>
+          </div>
 
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="assets/js/main.js"></script>
 
 
 </body>
