@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
 html {
     box-sizing: border-box;
   }
@@ -14,6 +15,8 @@ html {
   background-image: url(../img/section-composition4.jpg);
   background-repeat: no-repeat;
   background-size: 55% 100%;
+  color: #867772;
+  font-family: work sans;
  
 
     
@@ -21,10 +24,9 @@ html {
    
   }
 
- 
-   /*----------navbarlinks navigation------*/
+  /*----------navbarlinks navigation------*/
 
-   .navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,14 +36,22 @@ html {
     width: 100%;
   }
 .navbar-links {
-      width: 800px;
+    width: 800px;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     right: 150px;
+    margin: 0 10px;
     
     
   }
+  .navbar-links:nth-of-type(1){
+    padding-left: 155px;
+  }
+  ul.nav-2links li a, ul.navbar-links li a{
+    color: #867772;
+  }
+ 
 .nav-2links {
     
     display: flex;
@@ -50,35 +60,30 @@ html {
     padding:0 10px;
   }
 
-  
-.ilogo {
-    display: inline-block;
-  }
 
-.ilogo img {
-    width: 55px;
-    vertical-align: middle;
-  }
 .nav-item a {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     
   }
+  .nav-item a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+
+    /*-----logo----*/
+
+.ilogo {
+  display: inline-block;
+}
+
+.ilogo img {
+  width: 55px;
+  vertical-align: middle;
+}
 
  
-
-
-.imgsection img{
-    width: 90%;
-    height: 30%;
-    
-
-}
-.imgsection{
-    text-align: center;
-    margin-top: 10%;
-}
 
  /*---------- navi-vertikal-----*/
 
@@ -91,20 +96,69 @@ html {
     justify-content: space-around;
     flex-direction: column;
     top:200px;
+    
  
 }
 
-.nav-vertikal{
-
-    list-style-type: square;
+ul.nav-vertikal{
+    list-style-type: none;
     padding-left: 10px; 
-    margin: 30% 0;   
+    margin: 30% 0;
+   /* list-style-image: url(../img/radio_butto.svg);   */
 }
+
 
 .nav-vertikal li{
-  
-padding: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
+.nav-vertikal li img{
+  width: 10px;
+  height: 10px;
+  
+}
+  
+
+.nav-vertikal li ::before{
+  content:'';
+  border-left:1px solid #867772;
+  position: relative;
+  top: 25px;
+  left: -5px;
+  height: 100%;
+  
+}
+.nav-vertikal .last ::before{
+  content: none;
+}
+
+
+
+.nav-vertikal li a{
+  text-decoration: none;
+  color:black;
+  
+}
+.nav-vertikal li a:hover{
+  color: #fff;
+}
+/*-------animation-----*/
+.nav-vertikal li:hover {
+  animation: grow 1s  infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes grow {
+  from {top: 0px;}
+  to {bottom: 10px;}
+}
+
+/*------ende navi-vertikal---*/
+
+
+
+
 
 section{
   display: flex;
@@ -120,6 +174,10 @@ section{
     height: 300px;
     text-align: center;
 
+}
+.sectionbox > strong{
+  font-size: 20px;
+  color: #ebccc2;
 }
 button{
     width: 75px;
